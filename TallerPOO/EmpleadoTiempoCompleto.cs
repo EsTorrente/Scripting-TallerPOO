@@ -65,11 +65,11 @@ namespace TallerPOO
             if (Ausencias_ <= 3 && porcentajeAumento>0)
             {
                 Salario_Fijo += Salario_Fijo * porcentajeAumento;
-                Console.WriteLine($"Aumento realizado exitosamente. Nuevo salario:{salario_fijo}");
+                Console.WriteLine($"Aumento realizado exitosamente a {Nombre}. Nuevo salario:{salario_fijo}");
             }
             else
             {
-                Console.WriteLine("No califica para aumento.");
+                Console.WriteLine($"{Nombre} no califica para aumento.");
             }
         }
 

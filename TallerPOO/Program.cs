@@ -13,7 +13,7 @@
                 Empleado e3 = new EmpleadoTiempoCompleto("Laura", 3000000);
                 Empleado e4 = new EmpleadoPorHoras("Miguel", 18000, 90);
 
-                // Le agregamos 4 ausencias a Laura (no debería recibir aumento)
+                // le agrego 4 ausencias a Laura (no debería recibir aumento)
                 if (e3 is EmpleadoTiempoCompleto etc)
                 {
                     etc.AumentarAusencias();
