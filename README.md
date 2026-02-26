@@ -1,17 +1,17 @@
 # ARGUMENTACIÓN
 
 ## Clase abstracta Empleado:
-1. Es abstracta porque simplemente se usa como una base para los empleados.
+1. Es abstracta porque simplemente se usa como una base para los empleados. No tiene sentido instanciar un empleado genérico
 2. En el constructor defino de una vez el ID, porque ese es un proceso que debe ser automatizado para mejorar la experiencia. Evita que me quieran poner IDs repetidos (porque la gente es dañina)
 3. El id solo tiene get porque nadie lo toca, y el nombre DEBE llenarse.
-4. Los métodos los dejé sin rellenar porque para ambos son completamente distintos.
+4. Los métodos los declaro abstractos porque cada tipo de empleado calcula su salario de forma muy distinta.
 
 ## Interfaz IEvaluado
-1. Solamente le voy a dar bonus a los que trabajan tiempo completo porque son fieles a mi compañía. A los de hora no.
+1. Solamente le voy a dar bonus a los que trabajan tiempo completo porque son fieles a mi compañía. A los de hora no. Lo dejo como interfaz para que, en el futuro, otros tipos de empleados puedan implementarlo. 
 
 ## Clase EmpleadoPorHoras
 1. Double para el salario, porque quizá me vuelva millonaria y les pague un número ridículo.
-2. Uint porque las horas no pueden ser negativas
+2. Uint porque las horas no pueden ser negativas (no sé si eso está bien o debía hacer validación extra, así nos lo puso a hacer César en POO)
 3. La sobrecarga se la puse al método de calcular horas, porque quizá le quería aumentar un poquito el saldo a la hora de pagar si trabajó muy bien.
 4. Le puse también un método de modificar horas por si quiero romper contrato y quitarle porque me cayó mal, o aumentarle porque lo necesito otro rato.
 
